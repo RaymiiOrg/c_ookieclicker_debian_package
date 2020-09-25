@@ -1,0 +1,11 @@
+Source: cookieclicker
+Maintainer: Remy van Elst <debianpkg@relst.nl>
+Build-Depends: debhelper (>= 9), dh-systemd
+
+Package: cookieclicker
+Architecture: amd64
+Section: games
+Priority: optional
+Description: C++ clone of cookieclicker
+Homepage: https://raymii.org/
+Depends: ${misc:Depends}

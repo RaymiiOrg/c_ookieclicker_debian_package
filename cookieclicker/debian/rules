@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+DESTDIR=debian/cookieclicker
+
+%:
+	dh $@ --with=systemd
+
+override_dh_auto_clean:
+override_dh_auto_test:
+override_dh_auto_build:
+override_dh_auto_install:
+	mkdir -p $(DESTDIR)/etc/cookieclicker/gamedata/
+	mkdir -p $(DESTDIR)/usr/bin
+	cp -r gamedata/* $(DESTDIR)/etc/cookieclicker/gamedata/
+	cp cookieclicker $(DESTDIR)/usr/bin/cookieclicker
+
+override_dh_installinit:
+	dh_installinit --noscripts

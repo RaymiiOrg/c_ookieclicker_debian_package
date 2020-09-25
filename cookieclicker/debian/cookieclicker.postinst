@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    configure)
+        echo "Thank you for installing c_ookieclicker. Please check "
+        echo "https://raymii.org for more information."
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

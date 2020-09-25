@@ -1,0 +1,6 @@
+cookieclicker (1.0.5) experimental; urgency=low
+
+  * c_ookieclicker version 105 (See https://github.com/RaymiiOrg/cookieclicker/releases/tag/2.0.23)
+  * first Debian package build.
+  
+ -- Remy van Elst <debianpkg@relst.nl>  Sat, 19 Sep 2020 16:13:57 -0700
